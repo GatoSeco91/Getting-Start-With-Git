@@ -1,0 +1,85 @@
+Hola
+
+##### INICIALIZAR UN PROYECTO ######
+
+Para indicarle a git, que tu proyecto será versionado con git
+
+git init
+
+
+##### CLONAR REPOSITORIO REMOTO ######
+
+git clone https://github.com/Sofy18/CatGit.git
+
+
+##### AGREGAR ARCHIVOS ######
+
+Conocer el estatus de la rama.
+git status
+
+Comando para pre agregar archivos:
+git add path_archivo
+
+Comando para pre agregar todos los cambios.
+git add *
+
+Quiero quitar de los archivos preagregados.
+git reset
+
+Saber diferencias entre archivos.
+git diff
+
+Saber diferencias, solo de un archivo.
+git diff path_archivo
+
+
+
+##### GUARDAR ARCHIVOS EN LOCAL ######
+
+git commit -m "Hola, esto es un commit"
+
+##### SUBIR ARCHIVOS ######
+git push origin NombreRama
+
+Para saber el nombre de la rama:
+git branch
+
+Saber como se llama tu remoto y las URL
+git remote -v
+
+Sirve para ver el histórico de la rama. Lo que existe en el local.
+git log
+
+##### COMANDOS CHECKOUT ######
+git checkout archivo --- Eliminar cambios del archivo.
+git checkout rama ---- Cambio entre ramas.
+git checkout -b nuevoNombreRama ----- Crear una rama.
+git checkout -D rama ---- Borra una rama.
+git checkout commit--- Cambio a un commit, permite moverse a cualquier versión de la rama.
+
+##### Descarga ######
+---Descargar todos los cambios de una rama.
+git pull origin nombreRama
+
+---Descarga todos las actualizaciones de ramas, tags, commit... 
+git fetch -a
+
+##### Guardar en el local #####
+Guardar en el local, sin necesidad de hacer commit. Los cambios se pueden recuperar.
+git stash
+
+Muestra todos los stash guardados en el local.
+git stash list
+
+Aplica los últimos cambios guardados en el stash.
+git stash apply
+
+Aplica el número de stash guardado en el local.
+git stash apply numeroStash
+
+##### Merge #####
+Mezcla ramas en el local.
+git merge
+
+Sirve para pasar únicamente cambios que quiero.
+git cherry-pick

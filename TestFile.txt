@@ -3,3 +3,5 @@ Hello Word
 This is my first git training by a dog
 
 This is a test for a merge
+
+This is a test for a pull from the remote to the local branch

@@ -1,3 +1,5 @@
 Hello Word
 
 This is my first git training by a dog
+
+This is a test for a merge
